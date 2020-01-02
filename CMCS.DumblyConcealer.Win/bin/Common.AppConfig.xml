@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CommonAppConfig>
+  <!--程序唯一标识-->
+  <AppIdentifier>后台业务处理程序</AppIdentifier>
+  <!--集中管控Oracle数据库连接字符串-->
+  <SelfConnStr>Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=localhost)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=ORCL)));User Id=BIEOS_nxdb;Password=1234;</SelfConnStr>
+
+  <!--人脸识别MySql数据库连接字符串-->
+  <MySqlConnStr>Database=door;Data Source=192.168.5.177;Port=3328;UserId=bfcr;Password=bfcr123;Charset=utf8;TreatTinyAsBoolean=false;Allow User Variables=True</MySqlConnStr>
+  <!--门禁Access数据库连接字符串-->
+  <DoorSqlConnStr>Provider=Microsoft.Jet.Oledb.4.0;Data Source=D:\工作文档\永利化工\门禁\123.mdb</DoorSqlConnStr>
+
+
+  <!--Redis数据库连接字符串-->
+  <RedisStr>192.168.5.231:6379,password=Bossien1234,defaultDatabase=1,allowAdmin=true</RedisStr>
+  <!--RedisKey-->
+  <RedisKey>GG</RedisKey>
+  <!--RedisHostAndPort-->
+  <RedisIP>192.168.5.231:6379</RedisIP>
+  <!--RedisDefaultDatabase-->
+  <DefaultRedisDatabase>2</DefaultRedisDatabase>
+  <!--UserRedisDatabase-->
+  <UserRedisDatabase>0</UserRedisDatabase>
+
+  <!--InfluxDB-->
+  <InfluxDbUrlAndPort>http://192.168.0.141:8086</InfluxDbUrlAndPort>
+  <InfluxDbUser>admin</InfluxDbUser>
+  <InfluxDbPwd>Bossien1234</InfluxDbPwd>
+  <InfluxDbName>bossien</InfluxDbName>
+  <!--人员定位-->
+  <InfluxDbLocationUserTableName>LocationUser</InfluxDbLocationUserTableName>
+  <!--可燃有毒气体-->
+  <InfluxDbToxicGasTableName>ToxicGas</InfluxDbToxicGasTableName>
+
+  <!--MongoDb-->
+  <MongoDbUrl>mongodb://192.168.1.120:27017</MongoDbUrl>
+  <MongoDbDataBase>test</MongoDbDataBase>
+
+
+  <!--人员定位接口请求地址(查询所有人员)-->
+  <Locationlicence>http://39.104.102.35:8081/YlXUZHU/open/information/getRealInformation.do</Locationlicence>
+  <!--人员定位查询报警信息的Url-->
+  <SearchEmployeeUrl>http://39.104.102.35:8081/YlXUZHU/warn/getRealAreaWarn.do</SearchEmployeeUrl>
+  <!--人员定位查询区域人员的Url-->
+  <SearchAreaUrl>http://39.104.102.35:8081/YlXUZHU/open/information/getRealAreaInfo.do</SearchAreaUrl>
+  <!--人员定位请求用户名-->
+  <LocationUserName>root</LocationUserName>
+  <!--人员定位请求密码-->
+  <LocationPassWord>root</LocationPassWord>
+  <!--人员定位原点位置116.615259,34.724517,116.613847,34.724552-->
+  <Xcoor>117.412715</Xcoor>
+  <Ycoor>34.402161</Ycoor>
+  <!--左下角经纬度-->
+  <LeftDownXcoor>117.41279</LeftDownXcoor>
+  <LeftDownYcoor>34.399226</LeftDownYcoor>
+  <!--右上角经纬度-->
+  <RightUpXcoor>117.416293</RightUpXcoor>
+  <RightUpYcoor>34.402416</RightUpYcoor>
+  <!--微调人员加减15米-->
+  <TempLength>15</TempLength>
+  <!--微调人员Y坐标小于10米-->
+  <TempLength2>10</TempLength2>
+  <!--用于在地图显示人员的高低-->
+  <Zcoor>20</Zcoor>
+
+  <!--门禁接口URL-->
+  <AccessControlUrl>http://192.168.1.200:9527/</AccessControlUrl>
+  <AccessControlVoid>api/AcsDataApi/GetData</AccessControlVoid>
+  <!--门禁区域同步-->
+  <BuildWebServiceUrl>http://192.168.1.200:9527/wsAcsData.asmx/GetData</BuildWebServiceUrl>
+
+  <!--压缩机房串口-->
+  <ysjfCom>COM2</ysjfCom>
+  <!--设备ID-->
+  <ysjfDeviceId>1</ysjfDeviceId>
+  <!--压缩机房探测器数量-->
+  <ysjfDetectorsNum>21</ysjfDetectorsNum>
+
+  <!--甲类异丁烯罐区串口-->
+  <jlydxCom>COM3</jlydxCom>
+  <!--设备ID-->
+  <jlydxDeviceId>2</jlydxDeviceId>
+  <!--甲类异丁烯罐区探测器数量-->
+  <jlydxDetectorsNum>26</jlydxDetectorsNum>
+
+  <!--抗二车间串口-->
+  <kecjCom>COM4</kecjCom>
+  <!--设备ID-->
+  <kecjDeviceId>3</kecjDeviceId>
+  <!--抗二车间探测器数量-->
+  <kecjDetectorsNum>20</kecjDetectorsNum>
+
+  <!--抗一车间串口-->
+  <kycjCom>COM6</kycjCom>
+  <!--设备ID-->
+  <kycjDeviceId>1</kycjDeviceId>
+  <!--抗一车间探测器数量-->
+  <kycjDetectorsNum>27</kycjDetectorsNum>
+
+  <!--烷化车间串口-->
+  <whcjCom>COM7</whcjCom>
+  <!--设备ID-->
+  <whcjDeviceId>1</whcjDeviceId>
+  <!--烷化车间探测器数量-->
+  <whcjDetectorsNum>25</whcjDetectorsNum>
+
+  <!--能源车间串口-->
+  <nycjCom>COM8</nycjCom>
+  <!--设备ID-->
+  <nycjDeviceId>1</nycjDeviceId>
+  <!--能源车间探测器数量-->
+  <nycjDetectorsNum>22</nycjDetectorsNum>
+</CommonAppConfig>
+
