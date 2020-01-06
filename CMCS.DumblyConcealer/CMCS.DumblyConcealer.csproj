@@ -165,6 +165,7 @@
     <Compile Include="Tasks\BuildSync\BuildSyncDao.cs" />
     <Compile Include="Tasks\BuildSync\Entities\BuildLedSyncResult.cs" />
     <Compile Include="Tasks\BuildSync\Entities\LocationAreaResult.cs" />
+    <Compile Include="Tasks\LocationUser\Entities\LocationUserJW.cs" />
     <Compile Include="Tasks\LocationUser\Entities\LocationUserResult.cs" />
     <Compile Include="Tasks\LocationUser\LocationUserDao.cs" />
     <Compile Include="Tasks\OpcServerSync\Entities\BsonDocumentResult.cs" />

@@ -38,7 +38,7 @@
 
 
   <!--人员定位接口请求地址(查询所有人员)-->
-  <Locationlicence>http://39.104.102.35:8081/YlXUZHU/open/information/getRealInformation.do</Locationlicence>
+  <Locationlicence>http://39.104.102.35:8081/YlXUZHU/open/information/getRealGps.do</Locationlicence>
   <!--人员定位查询报警信息的Url-->
   <SearchEmployeeUrl>http://39.104.102.35:8081/YlXUZHU/warn/getRealAreaWarn.do</SearchEmployeeUrl>
   <!--人员定位查询区域人员的Url-->
